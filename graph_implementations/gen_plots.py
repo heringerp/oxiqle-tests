@@ -22,6 +22,9 @@ print(f"Hash-Odgi factor: {(df['odgi_traversal'] / df['hash_traversal']).mean()}
 print(f"Packed increase: {df.iloc[-1, 5] / df.iloc[0, 5]}")
 print(f"Odgi increase: {df.iloc[-1, 2] / df.iloc[0, 2]}")
 print(f"Hash increase: {df.iloc[-1, 8] / df.iloc[0, 8]}")
+print(f"Memory factor p: {(df['packed_memory'] / df['file_size']).mean()}")
+print(f"Memory factor h: {(df['hash_memory'] / df['file_size']).mean()}")
+print(f"Memory factor o: {(df['odgi_memory'] / df['file_size']).mean()}")
 
 
 def adjust_annotation_position(x, y, ax, label):

@@ -29,7 +29,7 @@ as `oxigraph`)
 oxigraph load -l db_chrY -f chrY.hprc-v1.0-pggb.gfa
 oxigraph load -l db_chr19 -f chr19.hprc-v1.0-pggb.gfa   # Be careful with this, as the resulting databases will be very large
 ```
-Please note that the files ar generated using the original pangenomes and not
+Please note that the files are generated using the original pangenomes and not
 the ones with replaced slashes. Also note that generating these databases
 takes a lot of time and disk space.
 
@@ -76,8 +76,8 @@ the data should be in this directory and the Apache Jena Fuseki Server should
 be running with the dataset loaded.
 
 Programs needed on path:
-- hyperfine
-- heaptrack
+- hyperfine (https://github.com/sharkdp/hyperfine)
+- heaptrack (https://invent.kde.org/sdk/heaptrack)
 - oxigraph (oxigraph-gfa repo)
 - rsh_analog (rsh_analog repo)
 - oxigraph_server (oxiqle repo) 

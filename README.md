@@ -4,8 +4,10 @@ Repository for all the tests and supplementary code of the OXIQLE project.
 Other used repositories:
 - ODGI performance: https://github.com/heringerp/odgi/tree/performance_release, https://doi.org/10.5281/zenodo.10888417
 - step_counter: https://github.com/heringerp/step_counter, https://zenodo.org/doi/10.5281/zenodo.10888440
-- oxigraph-gfa: https://github.com/heringerp/oxigraph-gfa, 
+- oxigraph-gfa: https://github.com/heringerp/oxigraph-gfa, https://zenodo.org/doi/10.5281/zenodo.10889250
 - rsh_analog: https://github.com/heringerp/rsh_analog, https://zenodo.org/doi/10.5281/zenodo.10888608
+- oxiqle: https://github.com/heringerp/oxiqle/tree/dev, https://zenodo.org/doi/10.5281/zenodo.10888681
+
 
 ## Setup data
 The patient data RDF file is already provided as `patients.ttl`. Alternatively,
@@ -85,10 +87,12 @@ jar-file and the path of the generated oxigraph database (if this guide was foll
 `db_chrY` or `db_chr19` depending on the benchmark).
 
 The four scripts are
-- `runtime_chry.sh`
-- `runtime_chr19.sh`
-- `memory_chry.sh`
-- `memory_chr19.sh`
+```bash
+runtime_chry.sh <SAPFHIR_CLI_JAR> <OXIGRAPH_DB>
+runtime_chr19.sh <SAPFHIR_CLI_JAR> <OXIGRAPH_DB>
+memory_chry.sh <SAPFHIR_CLI_JAR> <OXIGRAPH_DB>
+memory_chr19.sh <SAPFHIR_CLI_JAR> <OXIGRAPH_DB>
+```
 
 All of them can take quite a while to execute. All commands that ran into errors
 or could not be executed are commented out.
